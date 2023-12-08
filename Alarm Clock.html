@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Alarm Clock.css">
+    <link rel="shortcut icon" href="Clock.png">
+    <title>Alarm Clock</title>
+</head>
+<body>
+    <div id="group1">
+        <div class="time">
+            <span id="hrs" title="Hours">00</span>
+            <span>:</span>
+            <span id="min" title="Minutes">00</span>
+            <span>:</span>
+            <span id="sec"  title="Seconds">00</span>
+            <span id="per" title="Periods">AM</span>
+        </div>
+        <div class="date">
+            <span id="day" title="Day">Day, </span>
+            <span id="date" title="Date">Date </span>
+            <span id="month" title="Month">Month </span>
+            <span id="year" title="Year">Year</span>
+        </div>
+        <button type="button" id="btn" title="Set an alarm">
+            <img src="Alarm.png" alt="Set an alarm" class="img">
+            <span class="set_alarm">Set an alarm</span>
+        </button>
+        <button type="button" class="exit" onmouseup="window.close()" title="Exit">Exit</button>
+    </div>
+    <div id="group2">
+        <div class="set_an_alarm">Set an alarm</div>
+        <input type="time" id="alarmTime">
+        <button type="button" id="set">Set</button>
+        <button type="button" id="cancel">Cancel</button>
+    </div>
+    <div id="group3">
+        <span id="sen1">It's</span>
+        <span id="sen2">00:00</span>
+        <span id="sen3">AM!</span>
+        <button type="button" id="dismiss">Dismiss</button>
+    </div>
+    <script src="Alarm Clock.js"></script>
+</body>
+</html>
